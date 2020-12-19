@@ -9,9 +9,15 @@ class Divisions {
       World.add(world, this.body);
     }
     display(){
+
+      
       var pos =this.body.position;
+
+      push ()
       rectMode(CENTER);
       fill("white");
       rect(pos.x, pos.y, this.width, this.height);
+      pop ()
+
     }
   };
