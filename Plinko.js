@@ -7,7 +7,7 @@ class Plinkos {
         this.x = x;
         this.y = y;
         this.r = r;
-        this.body = Bodies.circle(this.x, this.y, this.r, options);
+        this.body = Bodies.circle(x, y, r, options);
         World.add(world, this.body);
     }
     display(){
@@ -18,7 +18,7 @@ class Plinkos {
         ellipseMode(CENTER);
         strokeWeight(3);
         fill("white");
-        ellipse(plinkosPos.x, plinkosPos.y, this.r, this.r);
+        ellipse(0, 0, this.r, this.r);
         pop();
     }
 }
